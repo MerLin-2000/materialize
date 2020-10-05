@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Materialize</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+    <div class="container section">
+        <!-- Modal Trigger -->
+        <a class="waves-effect waves-light btn green modal-trigger" href="#modalAncla">Modal Ancla</a>
+        <button data-target="modalButton"class="waves-effect waves-light btn purple modal-trigger">Modal Button</button>
+        <div id="modalAncla" class="modal">
+            <div class="modal-content">
+                <h4>Modal Ancla</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque tenetur iure nam harum, fuga earum officiis, voluptatibus nihil accusantium, enim perferendis soluta cumque corporis? Ex tenetur molestias aut quo modi.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="" class="btn modal-close">Cerrar</a>
+            </div>
+        </div>
+        <div id="modalButton" class="modal">
+            <div class="modal-content">
+                <h4>Modal Button</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque tenetur iure nam harum, fuga earum officiis, voluptatibus nihil accusantium, enim perferendis soluta cumque corporis? Ex tenetur molestias aut quo modi.</p>
+            </div>
+            <div class="modal-footer">
+                <a href=""class="btn modal-close">Cerrar</a>
+            </div>
+        </div>
+    </div>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems);
+  });
+</script>
+</body>
+</html>

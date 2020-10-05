@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materialize</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+    <div class="container section">
+        <a href="#" class="sidenav-trigger"data-target="menu_lateral">
+            <i class="material-icons">menu</i>
+        </a>
+        <ul class="sidenav" id="menu_lateral">
+            <li>
+                <div class="user-view">
+                    <div class="background">
+                        <img src="https://lorempixel.com/580/250/nature/1" alt="background">
+                    </div>
+                    <a href="#" >
+                        <img src="https://lorempixel.com/580/250/nature/2" alt="" class="circle">
+                    </a>
+                    <a href="#" >
+                        <span class="name white-text">Hector Ferrada</span>
+                    </a>
+                    <a href="#" >
+                        <span class="email white-text">hferrada.2000@gmail.com</span>
+                    </a>                    
+                </div>
+            </li>
+            <li>
+                <a href="">
+                    <i class="material-icons">cloud</i>Option 1
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="material-icons">cloud</i>Option 2
+                </a>
+            </li>
+            <li>
+                <div class="divider"></div>
+            </li>
+            <li>
+                <a href="">
+                    <i class="material-icons">cloud</i>Option 3
+                </a>
+            </li>
+        </ul>
+    </div>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems);
+  });
+</script>
+</body>
+</html>
